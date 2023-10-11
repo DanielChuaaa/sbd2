@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contentWrapper">
+        <div class="loginSection">
+          <div>
+            <h1 class="margin-bottom-200">Login</h1>
+
+            <form action="" onsubmit="return errorHandlers() ">
+              <!-- outpur error -->
+              <div id="cemail" class="emsg"></div>
+
+              <h4 class="margin-bottom-100">Email</h4>
+              <input type="email" placeholder="Masukkan Email" />
+              <i class="fa-solid fa-user" data-margin-left="margin-left"> </i>
+
+              <h4 class="margin-bottom-100">Password</h4>
+              <input type="password" placeholder="Masukkan Password" id="passwordInput" />
+              <i class="fa-solid fa-eye" data-margin-left="margin-left" onclick="togglePassword()"></i>
+              <i class="fa-solid fas fa-eye-slash" onclick="togglePassword()"></i>
+
+              <button class="button margin-bottom-200">Login</button>
+            </form>
+          </div>
+
+          <p>Belum punya akun? <a href="#" class="clr-purple"> Daftar sekarang</a></p>
+        </div>
+
+        <div class="rightSection bg-purple">
+          <img src="/assets/Rectangle 2.png" class="rectangle" alt="" />
+          <img src="/assets/undraw_coffee_re_x35h 2.png" class="img1" alt="" />
+          <img src="/assets/undraw_coffee_with_friends_3cbj 1.png" class="img2" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
