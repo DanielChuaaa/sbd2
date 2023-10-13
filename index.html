@@ -26,14 +26,15 @@
 
             <form action="" onsubmit="return errorHandlers() ">
               <!-- outpur error -->
-              <div id="cemail" class="emsg"></div>
+              <div id="eEmail" class="emsg"></div>
 
               <h4 class="margin-bottom-100">Email</h4>
-              <input type="email" placeholder="Masukkan Email" />
+              <input type="email" name="email" id="email" placeholder="Masukkan Email" />
               <i class="fa-solid fa-user" data-margin-left="margin-left"> </i>
 
               <h4 class="margin-bottom-100">Password</h4>
-              <input type="password" placeholder="Masukkan Password" id="passwordInput" />
+              <input type="password" name="password" id="passwordInput" placeholder="Masukkan Password" />
+
               <i class="fa-solid fa-eye" data-margin-left="margin-left" onclick="togglePassword()"></i>
               <i class="fa-solid fas fa-eye-slash" onclick="togglePassword()"></i>
 
@@ -41,13 +42,11 @@
             </form>
           </div>
 
-          <p>Belum punya akun? <a href="#" class="clr-purple"> Daftar sekarang</a></p>
+          <p>Belum punya akun? <a href="daftar.html" class="clr-brown"> Daftar sekarang</a></p>
         </div>
 
-        <div class="rightSection bg-purple">
-          <img src="./assets/Rectangle 2.png" class="rectangle" alt="" />
-          <img src="./assets/undraw_coffee_re_x35h 2.png" class="img1" alt="" />
-          <img src="./assets/undraw_coffee_with_friends_3cbj 1.png" class="img2" alt="" />
+        <div class="rightSection">
+          <img src="/assets/kopi.png" class="img" alt="" />
         </div>
       </div>
     </div>
