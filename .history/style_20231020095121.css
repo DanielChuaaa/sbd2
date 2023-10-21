@@ -1,0 +1,26 @@
+:root{
+    --clr-primary-100: #B7A281;
+
+    --clr-neutral-100: #A2A2A2;
+    --clr-neutral-200: #D9D9D9;
+    --clr-neutral-300: #F8F8F8;
+    --clr-neutral-400: #f1f1f1;
+
+    --ff: "Roboto Mono", monospace;
+
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #B7A281;
+}
+
+.icon{
+    background: var(--clr-neutral-400);
+}
