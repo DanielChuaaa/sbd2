@@ -15,7 +15,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="daftar.css" />
     <title>Document</title>
   </head>
   <body>
@@ -24,23 +24,24 @@
         <div class="loginSection">
           <div>
             <img src="./assets/logo.png" class="logo" alt="logo" />
-            <h1 class="margin-bottom-200">Login</h1>
+            <h1 class="margin-bottom-200">Daftar</h1>
 
             <form action="" onsubmit="return errorHandlers() ">
-              <!-- outpur error -->
-              <div id="eEmail" class="emsg"></div>
-
               <h4 class="margin-bottom-100">Email</h4>
               <input type="email" name="email" id="email" placeholder="Masukkan Email" />
-              <i class="fa-solid fa-user" data-margin-left="margin-left"> </i>
+
+              <h4 class="margin-bottom-100">Nama</h4>
+              <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" />
+
+              <h4 class="margin-bottom-100">No. Telpon</h4>
+              <input type="number" name="number" id="number" placeholder="Masukkan No. Telp" />
 
               <h4 class="margin-bottom-100">Password</h4>
               <input type="password" name="password" id="passwordInput" placeholder="Masukkan Password" />
-
               <i class="fa-solid fa-eye" data-margin-left="margin-left" onclick="togglePassword()"></i>
               <i class="fa-solid fas fa-eye-slash" onclick="togglePassword()"></i>
 
-              <button class="button margin-bottom-200">Login</button>
+              <button class="button margin-bottom-200">Daftar</button>
             </form>
           </div>
 
