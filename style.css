@@ -21,22 +21,31 @@ body {
   font-family: var(--ff);
 }
 
-.contentWrapper {
-  display: grid;
-  grid-template-columns: 1fr auto; /* Adjust the column ratios as needed */
+.container {
+  width: 100%; /* Make sure the container is 100% width of the viewport */
+  max-width: 1400px; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center the container */
 }
 
-@media screen and (max-width: 860px) {
-  .contentWrapper {
-    grid-template-columns: 1fr; /* Stack columns for small screens */
-  }
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust the column ratios as needed */
 }
 
 /* login */
 
 .loginSection {
   padding: 20px;
-  margin: 7rem auto;
+  margin: 5rem 6rem;
+  /* margin: 5rem auto 0rem 10rem; */
+}
+
+.logo {
+  position: absolute;
+  width: 7rem;
+  height: auto;
+  margin-top: -6rem;
+  margin-left: 26rem;
 }
 
 input {
@@ -92,8 +101,10 @@ input {
 /* image */
 
 .img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* utility class */
