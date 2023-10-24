@@ -4,14 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="dash.css" />
   </head>
   <body>
@@ -60,13 +55,49 @@
           </div>
 
           <div class="orderMenu">
-            <div class="menu1Parent">
-              <div class="menu1">
-                <img src="./assets/Vanilla Latte_LongShadow_Cream_1 1.png" alt="Vanilla Latte" />
+            <div class="menu1">
+              <div class="imgTextWrapper">
+                <div class="orderMenuImg">
+                  <img src="./assets/Vanilla Latte_LongShadow_Cream_1 1.png" alt="Vanilla Latte" />
+                </div>
+                <div class="menuTextWrapper">
+                  <h2>Vanilla Latte</h2>
+                  <div class="menuText">
+                    <p>Menu Klasik Dengan Sentuhan Unik</p>
+                    <div class="menuTextSub">
+                      <h4>Rp. 15.000</h4>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h2>Vanilla Latte</h2>
-              <p>Menu Klasik Dengan Sentuhan Unik</p>
-              <p>Rp 15.000</p>
+              <div class="statusOrder">
+                <div>
+                  <h4>Hot/Cold</h4>
+                  <div class="tempSub">
+                    <img src="./assets/fire.png" class="tempImgBg orderActive" alt="Heat Status" />
+                    <img src="./assets/snow.png" class="tempImgBg" alt="Cold Status" />
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Size</h4>
+                  <div class="sizeOrderSub">
+                    <p class="sizeOrderBg orderActive">S</p>
+                    <p class="sizeOrderBg">L</p>
+                    <p class="sizeOrderBg">M</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reqOrder">
+                <div class="sugar">
+                  <h4>Gula</h4>
+                  <div class="">
+                    <p class="reqOrderBg orderActive">30%</p>
+                    <p class="reqOrderBg">70%</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="menu2Parent">
