@@ -29,7 +29,7 @@ body {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-columns: 0.5fr 2.5fr 1fr;
 }
 
 /* icon / nav */
@@ -104,7 +104,7 @@ body {
 
 .menu {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .iconMenu {
@@ -126,7 +126,7 @@ body {
 
 .orderMenu {
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -179,7 +179,7 @@ body {
   margin-top: 1.5rem;
 }
 
-.tempSub {
+.tempParent {
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
@@ -215,13 +215,28 @@ body {
 /* reqorderbg */
 
 .reqOrder {
+  display: flex;  
+  gap: 5rem;
+  margin-top: 3rem;
 }
 
 .reqOrderBg {
   background: var(--clr-neutral-300);
 
-  padding: 0.1rem;
+  padding: 0.6rem 0.3rem;
   border-radius: 100vw;
+}
+
+.gula{
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem
+}
+
+.es{
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem
 }
 
 .orderActive {
@@ -232,7 +247,7 @@ body {
 
 .order {
   background: var(--clr-neutral-500);
-
+  width: 400px;
   padding: 1rem 2rem;
 }
 
