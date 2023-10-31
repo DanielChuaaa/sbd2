@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="dashstyle.css" />
+    <link rel="stylesheet" href="dash.css" />
   </head>
   <body>
     <div class="container">
       <div class="grid-wrapper">
         <div class="iconParent">
           <img src="./assets/logo.png" class="icon" width="90px" height="80px" alt="logo" />
+
           <a href="#"><img src="./assets/home.png" width="32px" height="38px" alt="home" />Home</a>
           <a href="#"><img src="./assets/menu.png" width="69px" height="60px" class="imgActive" alt="menu" />Menu</a>
           <a href="#"><img src="./assets/history.png" width="38px" height="38px" alt="history" />History</a>
@@ -22,49 +23,49 @@
           <a href="#"><img src="./assets/logout.png" class="logout" width="38px" height="38px" alt="logout" />Logout</a>
         </div>
 
-        <div class="content">
-          <div class="nav">
+        <div>
+          <div class="kategoriWrapper">
             <h2>Kategori</h2>
-            <div class="inputWrapper">
+            <div>
               <input type="text" name="text" id="text" class="input" placeholder="Telurusi menu terbaik..." />
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <img src="./assets/magnifier.png" width="20px" height="20px" alt="magnifier" class="magnifier" />
             </div>
           </div>
 
-          <div class="menu">
+          <div class="kategoriMenu">
             <div class="iconMenu">
               <a href="#"><img src="./assets/popcorn.png" alt="popcorn" /></a>
-              <p>Snack</p>
+              <a href="#">Snack</a>
             </div>
             <div class="iconMenu">
               <a href="#"><img src="./assets/kopi.png" alt="kopi" /></a>
-              <p>Kopi</p>
+              <a href="#">Kopi</a>
             </div>
             <div class="iconMenu">
               <a href="#"><img src="./assets/teh.png" alt="teh" /></a>
-              <p>Teh</p>
+              <a href="#">Teh</a>
             </div>
             <div class="iconMenu">
               <a href="#"><img src="./assets/susu.png" alt="susu" /></a>
-              <p>Susu</p>
+              <a href="#">Susu</a>
             </div>
             <div class="iconMenu">
               <a href="#"><img src="./assets/makanan.png" alt="makanan" /></a>
-              <p>Makanan</p>
+              <a href="#">Makanan</a>
             </div>
           </div>
 
           <div class="orderMenu">
-            <div class="menu1">
+            <div class="menu">
               <div class="imgTextWrapper">
                 <div class="orderMenuImg">
                   <img src="./assets/Vanilla Latte_LongShadow_Cream_1 1.png" alt="Vanilla Latte" />
                 </div>
                 <div class="menuTextWrapper">
                   <h2>Vanilla Latte</h2>
-                  <div class="menuText">
+                  <div class="menuTextSub">
                     <p>Menu Klasik Dengan Sentuhan Unik</p>
-                    <div class="menuTextSub">
+                    <div>
                       <h4>Rp. 15.000</h4>
                     </div>
                   </div>
@@ -73,7 +74,7 @@
               <div class="statusOrder">
                 <div>
                   <h4>Hot/Cold</h4>
-                  <div class="tempParent">
+                  <div class="temp">
                     <img src="./assets/fire.png" class="tempImgBg orderActive" alt="Heat Status" />
                     <img src="./assets/snow.png" class="tempImgBg" alt="Cold Status" />
                   </div>
@@ -81,10 +82,10 @@
 
                 <div>
                   <h4>Size</h4>
-                  <div class="sizeOrderSub">
-                    <p class="sizeOrderBg orderActive">S</p>
-                    <p class="sizeOrderBg">L</p>
-                    <p class="sizeOrderBg">M</p>
+                  <div class="size">
+                    <p class="sizeBg orderActive">S</p>
+                    <p class="sizeBg">L</p>
+                    <p class="sizeBg">M</p>
                   </div>
                 </div>
               </div>
@@ -108,16 +109,16 @@
               </div>
             </div>
 
-            <div class="menu1">
+            <div class="menu">
               <div class="imgTextWrapper">
                 <div class="orderMenuImg">
-                  <img src="./assets/10032021_Vietnamese_LS-min 1.png" alt="Vanilla Latte" />
+                  <img src="./assets/10032021_Vietnamese_LS-min 1.png" width="95px" height="85px" alt="Vietnam Iced Coffe" />
                 </div>
                 <div class="menuTextWrapper">
-                  <h2>Vanilla Latte</h2>
-                  <div class="menuText">
+                  <h2>Vietnamese Iced Coffe</h2>
+                  <div class="menuTextSub">
                     <p>Menu Klasik Dengan Sentuhan Unik</p>
-                    <div class="menuTextSub">
+                    <div>
                       <h4>Rp. 15.000</h4>
                     </div>
                   </div>
@@ -126,7 +127,7 @@
               <div class="statusOrder">
                 <div>
                   <h4>Hot/Cold</h4>
-                  <div class="tempParent">
+                  <div class="temp">
                     <img src="./assets/fire.png" class="tempImgBg orderActive" alt="Heat Status" />
                     <img src="./assets/snow.png" class="tempImgBg" alt="Cold Status" />
                   </div>
@@ -134,10 +135,117 @@
 
                 <div>
                   <h4>Size</h4>
-                  <div class="sizeOrderSub">
-                    <p class="sizeOrderBg orderActive">S</p>
-                    <p class="sizeOrderBg">L</p>
-                    <p class="sizeOrderBg">M</p>
+                  <div class="size">
+                    <p class="sizeBg orderActive">S</p>
+                    <p class="sizeBg">L</p>
+                    <p class="sizeBg">M</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reqOrder">
+                <div>
+                  <h4>Gula</h4>
+                  <div class="gula">
+                    <p class="reqOrderBg orderActive">30%</p>
+                    <p class="reqOrderBg">70%</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Es</h4>
+                  <div class="es">
+                    <p class="reqOrderBg orderActive">30%</p>
+                    <p class="reqOrderBg">70%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="imgTextWrapper">
+                <div class="orderMenuImg">
+                  <img src="./assets/Rectangle 27.png" alt="Coffe Pandan" />
+                </div>
+                <div class="menuTextWrapper">
+                  <h2>Coffe Pandan</h2>
+                  <div class="menuTextSub">
+                    <p>Perpaduan antara kopi dan pandan</p>
+                    <div>
+                      <h4>Rp. 18.000</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="statusOrder">
+                <div>
+                  <h4>Hot/Cold</h4>
+                  <div class="temp">
+                    <img src="./assets/fire.png" class="tempImgBg orderActive" alt="Heat Status" />
+                    <img src="./assets/snow.png" class="tempImgBg" alt="Cold Status" />
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Size</h4>
+                  <div class="size">
+                    <p class="sizeBg orderActive">S</p>
+                    <p class="sizeBg">L</p>
+                    <p class="sizeBg">M</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="reqOrder">
+                <div>
+                  <h4>Gula</h4>
+                  <div class="gula">
+                    <p class="reqOrderBg orderActive">30%</p>
+                    <p class="reqOrderBg">70%</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Es</h4>
+                  <div class="es">
+                    <p class="reqOrderBg orderActive">30%</p>
+                    <p class="reqOrderBg">70%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu">
+              <div class="imgTextWrapper">
+                <div class="orderMenuImg">
+                  <img src="./assets/Rectangle 31.png" width="95px" height="85px" alt="Fruit Coffe" />
+                </div>
+                <div class="menuTextWrapper">
+                  <h2>Fruit Coffe</h2>
+                  <div class="menuTextSub">
+                    <p>Kombinasi kopi berkualitas dan buah seggar</p>
+                    <div>
+                      <h4>Rp. 23.000</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="statusOrder">
+                <div>
+                  <h4>Hot/Cold</h4>
+                  <div class="temp">
+                    <img src="./assets/fire.png" class="tempImgBg orderActive" alt="Heat Status" />
+                    <img src="./assets/snow.png" class="tempImgBg" alt="Cold Status" />
+                  </div>
+                </div>
+
+                <div>
+                  <h4>Size</h4>
+                  <div class="size">
+                    <p class="sizeBg orderActive">S</p>
+                    <p class="sizeBg">L</p>
+                    <p class="sizeBg">M</p>
                   </div>
                 </div>
               </div>
@@ -172,25 +280,68 @@
             <p>Na-Yeon Hae Jin</p>
           </div>
 
-          <div class="bill">
+          <div class="pesanan">
             <h3>Pesanan</h3>
 
-            <div class="bill1">
-              <img src="./assets/10032021_Vietnamese_LS-min 1.png" height="62px" width="62px" alt="caramel Machiato" />
+            <div class="bill">
+              <div class="greyBg">
+                <img src="./assets/18-SparklingEspressoWithMint_ContactShadow_Green_3 1.png" height="40px" width="40px" alt="Sparkling Espresso" />
+              </div>
               <div>
-                <p>Caramel Machiato</p>
-                <p>1x</p>
-                <p>Rp 15.000</p>
+                <p>Sparkling Espresso</p>
+                <div class="orderSumAndPrice">
+                  <p>x1</p>
+                  <p>Rp 15.000</p>
+                </div>
               </div>
             </div>
 
-            <div class="bill1">
-              <img src="./assets/10032021_Vietnamese_LS-min 1.png" height="62px" width="62px" alt="caramel Machiato" />
-              <div>
-                <p>Caramel Machiato</p>
-                <p>1x</p>
-                <p>Rp 15.000</p>
+            <div class="bill">
+              <div class="greyBg">
+                <img src="./assets/3-CaffeAmericano_LongShadow_Cream_1 1.png" height="40px" width="40px" alt="Americano" />
               </div>
+              <div>
+                <p>Sparkling Espresso</p>
+                <div class="orderSumAndPrice">
+                  <p>x1</p>
+                  <p>Rp 15.000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="totalPembayaran">
+              <div class="potonganMember">
+                <p>Potongan Member</p>
+                <p style="font-size: 12px">Rp. 5000</p>
+              </div>
+
+              <del style="display: flex; justify-content: flex-end; font-weight: bold">Rp. 40.000</del>
+              <div class="total">
+                <h3>Total</h3>
+                <h4>Rp 35.000</h4>
+              </div>
+            </div>
+
+            <h3>Metode Pembayaran</h3>
+            <div class="metodePembayaran">
+              <div class="metodePembayaranSub">
+                <img src="./assets/Vector.png" width="50px" height="35px" alt="Debit" />
+                <p>Debit</p>
+              </div>
+
+              <div class="metodePembayaranSub">
+                <img src="./assets/Vector (1).png" width="45px" height="35px" alt="Cash" />
+                <p>Cash</p>
+              </div>
+
+              <div class="metodePembayaranSub">
+                <img src="./assets/Vector (2).png" width="40px" height="40px" alt="E-Wallet" />
+                <p>E-Wallet</p>
+              </div>
+            </div>
+
+            <div>
+              <button class="button">Bayar</button>
             </div>
           </div>
         </div>
