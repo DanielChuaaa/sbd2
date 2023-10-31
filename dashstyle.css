@@ -29,12 +29,13 @@ body {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 0.5fr 2.5fr 1fr;
+  grid-template-columns: 0.55fr 2.5fr 1.3fr;
 }
 
-/* icon / nav */
+/* icon  */
 
 .iconParent {
+  position: fixed;
   background: var(--clr-neutral-500);
 
   display: flex;
@@ -76,13 +77,18 @@ body {
 
 /* content */
 
-.nav {
+.kategoriWrapper {
   display: flex;
   align-items: center;
-  gap: 20rem;
+  gap: 22rem;
 
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.magnifier {
+  position: absolute;
+  transform: translateX(-2rem) translateY(0.4rem);
 }
 
 .input {
@@ -100,11 +106,11 @@ body {
   color: var(--clr-neutral-100);
 }
 
-/* menu */
+/* kategorimenu */
 
-.menu {
+.kategoriMenu {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.34rem;
 }
 
 .iconMenu {
@@ -118,23 +124,28 @@ body {
   justify-content: flex-end;
 }
 
-.iconMenu p {
+.iconMenu a {
   color: var(--clr-neutral-200);
+
+  text-decoration: none;
 }
 
 /* ordeMenu */
 
 .orderMenu {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.menu1 {
+.menu {
   background: var(--clr-neutral-500);
 
   padding: 1rem;
   border-radius: 10px;
+  width: 22rem;
+  height: auto;
 }
 
 /* order img */
@@ -164,7 +175,7 @@ body {
   font-size: 15px;
 }
 
-.menuText {
+.menuTextSub {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
@@ -179,7 +190,7 @@ body {
   margin-top: 1.5rem;
 }
 
-.tempParent {
+.temp {
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
@@ -194,49 +205,50 @@ body {
 
 /* size */
 
-.sizeOrderSub {
+.size {
   display: flex;
   gap: 1rem;
   margin-top: 0.5rem;
 }
 
-.sizeOrderSub p {
+.size p {
   font-size: 1.4rem;
-  font-weight: var(--fw-regular);
 }
 
-.sizeOrderBg {
+.sizeBg {
   background: var(--clr-neutral-300);
 
   padding: 0.2rem 0.7rem;
   border-radius: 100vw;
 }
 
-/* reqorderbg */
+/* reqorder */
 
 .reqOrder {
-  display: flex;  
+  display: flex;
   gap: 5rem;
   margin-top: 3rem;
 }
 
+/* reqorderbg */
+
 .reqOrderBg {
   background: var(--clr-neutral-300);
 
-  padding: 0.6rem 0.3rem;
+  padding: 0.7rem 0.3rem;
   border-radius: 100vw;
 }
 
-.gula{
+.gula {
   display: flex;
   gap: 1rem;
-  margin-top: 0.5rem
+  margin-top: 0.5rem;
 }
 
-.es{
+.es {
   display: flex;
   gap: 1rem;
-  margin-top: 0.5rem
+  margin-top: 0.5rem;
 }
 
 .orderActive {
@@ -247,9 +259,10 @@ body {
 
 .order {
   background: var(--clr-neutral-500);
-  width: 400px;
   padding: 1rem 2rem;
 }
+
+/* profile */
 
 .profile {
   display: flex;
@@ -262,12 +275,84 @@ body {
   border-radius: 100vw;
 }
 
-/* bill */
+/* pesanan */
 
-.bill {
+.pesanan {
   margin-top: 2rem;
 }
 
-.bill1 {
+/* bill */
+
+.bill {
   display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.orderSumAndPrice {
+  display: flex;
+  gap: 10rem;
+  line-height: 2rem;
+}
+
+/* totalPembayaran */
+
+.totalPembayaran {
+  margin-top: 10rem;
+}
+
+.potonganMember {
+  display: flex;
+  align-items: center;
+  gap: 8.8rem;
+}
+
+.total {
+  display: flex;
+  gap: 13rem;
+  margin-bottom: 2rem;
+}
+/* metodePembayaran */
+
+.metodePembayaran {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.metodePembayaranSub {
+  background: var(--clr-primary-100);
+  color: var(--clr-neutral-500);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* button */
+
+.button {
+  background: var(--clr-primary-100);
+  color: var(--clr-neutral-500);
+  font-weight: var(--fw-bold);
+
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+/* utility class */
+
+.greyBg {
+  background: var(--clr-neutral-300);
+
+  padding: 0.7rem 0.7rem;
+  border-radius: 5px;
 }
