@@ -1,266 +1,277 @@
 :root {
-  --clr-primary-100: #b7a281;
-  --clr-primary-200: #9e616a;
-  --clr-primary-300: #f6eddf;
+    --clr-primary-100: #b7a281;
+    --clr-primary-200: #9e616a;
+    --clr-primary-300: #f6eddf;
+  
+    --clr-neutral-100: #818181;
+    --clr-neutral-200: #a2a2a2;
+    --clr-neutral-300: #d9d9d9;
+    --clr-neutral-400: #f8f8f8;
+    --clr-neutral-500: #ffffff;
+    --clr-neutral-600: #000000;
+  
+    --ff: "Rubik", sans-serif;
+  
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--ff);
+    background: var(--clr-primary-300);
+  }
+  
+  /* gridwrapper */
+  
+  .gridWrapper {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.9fr;
+  }
+  
+  /* icon  */
+  
+  .iconParent {
+    background: var(--clr-neutral-500);
+  
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    height: 100vh;
+    gap: 2rem;
+  }
+  
+  .iconParent p {
+    font-size: 14px;
+  }
+  
+  .iconParent a {
+    color: var(--clr-neutral-200);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .icon {
+    margin-top: 1rem;
+  }
+  
+  .imgActive {
+    background: var(--clr-primary-100);
+  
+    padding: 1rem;
+    border-radius: 13px;
+  }
+  
+  .logout {
+    margin-top: 3rem;
+  }
+  
+  /* profile */
+  
+  .profileBio {
+    margin-top: 1.5rem;
+  }
+  
+  .rounded {
+    background: var(--clr-primary-300);
+  
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 4rem;
+    margin-top: -2.5rem;
+    margin-left: 2rem;
+    border-radius: 100vh;
+    z-index: 1;
+  }
+  
+  .pp {
+    margin-left: 2.3rem;
+  }
+  
+  .pp p {
+    color: var(--clr-neutral-100);
+  }
+  
+  .imgHeader {
+    border-radius: 16px;
+  }
+  
+  .imgProfile {
+    position: absolute;
+    float: left;
+    border-radius: 100vw;
+    margin-top: -2rem;
+    z-index: 2;
+  }
+  
+  .tes {
+    display: flex;
+  }
+  
+  .veriAndLove {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  
+  .veriAndLoveSub {
+    display: flex;
+    gap: 10rem;
+  }
+  
+  .socialIcon {
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+  }
+  
+  /* grid wrapper content */
+  
+  .gridWrapperContent {
+    display: grid;
+    grid-template-areas:
+      "accountSetting daftarMenu"
+      "accountSetting biodata"
+      "accountSetting biodata";
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+  
+  .accountSetting {
+    grid-area: accountSetting;
+  }
+  
+  .daftarMenu {
+    grid-area: daftarMenu;
+  }
+  
+  .biodata {
+    grid-area: biodata;
+  }
+  /* account setting */
+  
+  .accountSetting {
+    background: var(--clr-neutral-500);
+  
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0px 20px 20px 20px;
+  }
+  
+  .accountSetting a {
+    color: var(--clr-neutral-600);
+    font-weight: var(--fw-bold);
+  
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .iconGap {
+    margin-top: 14rem;
+  }
+  
+  /* daftar menu */
+  
+  .daftarMenu {
+    background: var(--clr-neutral-500);
+  
+    padding: 1rem;
+  }
+  
+  .daftarMenuWrapper {
+    display: flex;
+  }
+  
+  .imgBg {
+    background: var(--clr-neutral-300);
+  
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  
+  /* biodata */
+  
+  .biodata {
+    background: var(--clr-neutral-500);
+  
+    border-radius: 20px;
+    padding: 1rem 2rem;
+  }
+  
+  .biodataSub {
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .except {
+    border-bottom: 1px solid var(--clr-neutral-300);
+  
+    margin-top: 0.5rem;
+  }
+  
+  /* logowrapper */
+  
+  .logoWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* andamungkinjugasuka */
+  
+  .andaMungkinJugaSuka {
+    background: var(--clr-neutral-500);
+  
+    padding: 1rem 2rem;
+    border-radius: 20px;
+  }
 
-  --clr-neutral-100: #818181;
-  --clr-neutral-200: #a2a2a2;
-  --clr-neutral-300: #d9d9d9;
-  --clr-neutral-400: #f8f8f8;
-  --clr-neutral-500: #ffffff;
-  --clr-neutral-600: #000000;
+  .img{
+    display: flex;
+  }
 
-  --ff: "Rubik", sans-serif;
+  
+  
+  /* utility classes */
+  
+  .flex {
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .margin-top-100 {
+    margin-top: 1rem;
+  }
+  
+  .margin-top-300 {
+    margin-top: 3rem;
+  }
 
-  --fw-regular: 400;
-  --fw-medium: 500;
-  --fw-semi-bold: 600;
-  --fw-bold: 700;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--ff);
-  background: var(--clr-primary-300);
-}
-
-/* gridwrapper */
-
-.gridWrapper {
-  display: grid;
-  grid-template-columns: 0.3fr 1fr 0.9fr;
-}
-
-/* icon  */
-
-.iconParent {
-  background: var(--clr-neutral-500);
-
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 130px;
-  height: 100vh;
-  gap: 2rem;
-}
-
-.iconParent p {
-  font-size: 14px;
-}
-
-.iconParent a {
-  color: var(--clr-neutral-200);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.icon {
-  margin-top: 1rem;
-}
-
-.imgActive {
-  background: var(--clr-primary-100);
-
-  padding: 1rem;
-  border-radius: 13px;
-}
-
-.logout {
-  margin-top: 3rem;
-}
-
-/* profile */
-
-.profileBio {
-  margin-top: 1.5rem;
-}
-
-.rounded {
-  background: var(--clr-primary-300);
-
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  padding: 4rem;
-  margin-top: -2.5rem;
-  margin-left: 2rem;
-  border-radius: 100vh;
-  z-index: 1;
-}
-
-.pp {
-  margin-left: 2.3rem;
-}
-
-.pp p {
-  color: var(--clr-neutral-100);
-}
-
-.imgHeader {
-  border-radius: 16px;
-}
-
-.imgProfile {
-  position: absolute;
-  float: left;
-  border-radius: 100vw;
-  margin-top: -2rem;
-  z-index: 2;
-}
-
-.tes {
-  display: flex;
-}
-
-.veriAndLove {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.veriAndLoveSub {
-  display: flex;
-  gap: 10rem;
-}
-
-.socialIcon {
-  display: flex;
-  gap: 0.6rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.7rem;
-}
-
-/* grid wrapper content */
-
-.gridWrapperContent {
-  display: grid;
-  grid-template-areas:
-    "accountSetting daftarMenu"
-    "accountSetting biodata"
-    "accountSetting biodata";
-  gap: 1rem;
-  margin-top: 2.5rem;
-}
-
-.accountSetting {
-  grid-area: accountSetting;
-}
-
-.daftarMenu {
-  grid-area: daftarMenu;
-}
-
-.biodata {
-  grid-area: biodata;
-}
-/* account setting */
-
-.accountSetting {
-  background: var(--clr-neutral-500);
-
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  padding: 0.6rem 1.5rem;
-  border-radius: 0px 20px 20px 20px;
-}
-
-.accountSetting a {
-  color: var(--clr-neutral-600);
-  font-weight: var(--fw-bold);
-
-  display: flex;
-  gap: 0.7rem;
-  align-items: center;
-  margin-top: 0.5rem;
-  text-decoration: none;
-}
-
-.iconGap {
-  margin-top: 10rem;
-}
-
-/* daftar menu */
-
-.daftarMenu {
-  background: var(--clr-neutral-500);
-
-  padding: 1rem;
-}
-
-.daftarMenuWrapper {
-  display: flex;
-}
-
-.imgBg {
-  background: var(--clr-neutral-300);
-
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-}
-
-/* biodata */
-
-.biodata {
-  background: var(--clr-neutral-500);
-
-  border-radius: 20px;
-  padding: 1rem 2rem;
-}
-
-.biodataSub {
-  display: flex;
-  gap: 5rem;
-}
-
-.except {
-  border-bottom: 1px solid var(--clr-neutral-300);
-
-  margin-top: 0.5rem;
-}
-
-/* logowrapper */
-
-.logoWrapper {
-  display: flex;
-  flex-direction: column;
-}
-
-/* andamungkinjugasuka */
-
-.andaMungkinJugaSuka {
-  background: var(--clr-neutral-500);
-
-  padding: 1rem 2rem;
-  border-radius: 20px;
-}
-
-/* utility classes */
-
-.flex {
-  display: flex;
-  gap: 5rem;
-}
-
-.margin-top-100 {
-  margin-top: 1rem;
-}
-
-.margin-top-300 {
-  margin-top: 3.5rem;
-}
-
-.margin-left-800 {
-  margin-left: 8rem;
-}
+  .margin-left-300{
+    margin-left: 9rem;
+  }
+  
+  .margin-left-800 {
+    margin-left: 8rem;
+  }
